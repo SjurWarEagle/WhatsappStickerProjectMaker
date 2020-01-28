@@ -10,7 +10,7 @@ pipeline {
     }
 
     environment {
-        IDENTIFIER = "experiments"
+        IDENTIFIER = "__IDENTIFIER__"
         PRODUCT_NAME = "WhatsApp-Sticker-de.tkunkel.${IDENTIFIER}"
         PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
         DOCKER_IMAGE_NAME = "build-${PRODUCT_NAME.toLowerCase()}-${BRANCH_NAME.toLowerCase()}"
@@ -91,7 +91,7 @@ pipeline {
 
                         archiveArtifacts artifacts: 'out_bundle_archive_set.apks', fingerprint: true, allowEmptyArchive: false
                         archiveArtifacts artifacts: 'app/build/outputs/bundle/debug/app-debug.aab', fingerprint: true, allowEmptyArchive: false
-                        archiveArtifacts artifacts: 'app/build/outputs/release/release/app-release.aab', fingerprint: true, allowEmptyArchive: false
+                        archiveArtifacts artifacts: 'app/build/outputs/bundle/release/app-release.aab', fingerprint: true, allowEmptyArchive: false
                     }
                 }
             }

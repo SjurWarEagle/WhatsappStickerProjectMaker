@@ -33,6 +33,7 @@ if [ $USE_IOS = "yes" ]; then
 fi
 # Some cleanup
 rm -rf stickers/.github
+rm -rf stickers/.git
 rm -rf stickers/README.md
 rm -rf stickers/CONTRIBUTING.md
 rm -rf stickers/CODE_OF_CONDUCT.md
