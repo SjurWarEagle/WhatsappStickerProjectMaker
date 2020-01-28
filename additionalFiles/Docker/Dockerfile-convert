@@ -1,0 +1,6 @@
+FROM ubuntu:bionic
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update --fix-missing && apt-get upgrade -y --no-install-recommends
+RUN apt-get install -y --no-install-recommends imagemagick webp
+RUN mkdir -p /images
