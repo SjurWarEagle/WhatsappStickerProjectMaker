@@ -28,3 +28,10 @@ mynicestickers_releaseStatus=inProgress
 mynicestickers_serviceAccountCredentials=/builddir/android_service_account.json
 ```
 The paths will be used inside the docker image, so don't worry no adjustment needed.
+
+# Google Playstore
+
+# Create new Application
+Open the [All Application](https://play.google.com/apps/publish/) overview and create new application.
+* enter title
+

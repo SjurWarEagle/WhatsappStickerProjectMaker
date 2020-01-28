@@ -10,6 +10,8 @@ USE_ANDROID=yes
 
 # Logic
 echo "Creating $PROJECTNAME"
+rm -rf ../tmp
+mkdir -p ../tmp
 cd ../tmp
 rm -rf *
 mkdir -p original
