@@ -47,6 +47,7 @@ find ./ -type f -exec sed -i "s/com.example.samplestickerapp/${APPLICATIONID}/g"
 mv Android/app/src/main/java/com Android/app/src/main/java/$APPLICATIONID1
 mv Android/app/src/main/java/$APPLICATIONID1/example Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2
 mv Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2/samplestickerapp Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2/$APPLICATIONID3
+mv Android/app/src/main/assets Android/app/src/main/assets_template
 # Application Name
 find ./ -type f -exec sed -i "s/WhatsAppSampleStickerApp/${PROJECTNAME} - Sticker/g" {} \;
 
