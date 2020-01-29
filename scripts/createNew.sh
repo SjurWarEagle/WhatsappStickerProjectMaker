@@ -1,9 +1,9 @@
 #!/bin/sh
 # Configuration
-PROJECTNAME=Experiments
+PROJECTNAME=CohhCarnage
 APPLICATIONID1="de"
 APPLICATIONID2="tkunkel"
-APPLICATIONID3="experiments"
+APPLICATIONID3="cohhcarnage"
 APPLICATIONID="${APPLICATIONID1}.${APPLICATIONID2}.${APPLICATIONID3}"
 USE_IOS=no
 USE_ANDROID=yes
@@ -47,6 +47,8 @@ find ./ -type f -exec sed -i "s/com.example.samplestickerapp/${APPLICATIONID}/g"
 mv Android/app/src/main/java/com Android/app/src/main/java/$APPLICATIONID1
 mv Android/app/src/main/java/$APPLICATIONID1/example Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2
 mv Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2/samplestickerapp Android/app/src/main/java/$APPLICATIONID1/$APPLICATIONID2/$APPLICATIONID3
+# Application Name
+find ./ -type f -exec sed -i "s/WhatsAppSampleStickerApp/${PROJECTNAME} - Sticker/g" {} \;
 
 # Copy Additional Files
 echo 'Copy Additional Files'
