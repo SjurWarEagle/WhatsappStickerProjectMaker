@@ -62,3 +62,4 @@ cp -r ../../../additionalFiles/tools .
 cp -r ../../../additionalFiles/buildprocess/* .
 find ./Android -type f -exec sed -i "s/THENAME_/${APPLICATIONID3}_/g" {} \;
 find ./Android -type f -exec sed -i "s/com.example.samplestickerapp/${APPLICATIONID}/g" {} \;
+find ./Android -type f -exec sed -i "s/Sticker details/Sticker for ${PROJECTNAME}/g" {} \;
