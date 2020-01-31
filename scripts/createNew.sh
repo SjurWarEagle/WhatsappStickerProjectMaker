@@ -1,10 +1,11 @@
 #!/bin/sh
 # Configuration
-PROJECTNAME=CohhCarnage
+PROJECTNAME="DerKokon"
 APPLICATIONID1="de"
 APPLICATIONID2="tkunkel"
-APPLICATIONID3="cohhcarnage"
+APPLICATIONID3="raupling"
 APPLICATIONID="${APPLICATIONID1}.${APPLICATIONID2}.${APPLICATIONID3}"
+#APPLICATIONID="${APPLICATIONID1}.${APPLICATIONID2}.whatsapp.sticker.${APPLICATIONID3}"
 USE_IOS=no
 USE_ANDROID=yes
 
@@ -56,6 +57,7 @@ echo 'Copy Additional Files'
 cp -r ../../../additionalFiles/Docker .
 cp -r ../../../additionalFiles/imageConverter .
 cp -r ../../../additionalFiles/Jenkins .
+cp -r ../../../additionalFiles/Checker .
 find ./Jenkins -type f -exec sed -i "s/WhatsApp-Sticker-XXX/WhatsApp-Sticker-${APPLICATIONID3}/g" {} \;
 find ./Jenkins -type f -exec sed -i "s/__IDENTIFIER__/${APPLICATIONID3}/g" {} \;
 cp -r ../../../additionalFiles/tools .

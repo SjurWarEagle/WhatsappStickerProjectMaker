@@ -21,7 +21,7 @@ Now create a file `android_keystore_mystickers.properties`
 ```properties
 mynicestickers_storeFile=/builddir/android.jks
 mynicestickers_storePassword=yourpassword
-mynicestickers_keyAlias=eh20-mynicestickers
+mynicestickers_keyAlias=whatsapp-mynicestickers
 mynicestickers_keyPassword=yourpassword
 mynicestickers_track=alpha
 mynicestickers_releaseStatus=inProgress
