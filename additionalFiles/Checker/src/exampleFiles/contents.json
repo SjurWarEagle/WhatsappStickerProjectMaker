@@ -1,0 +1,23 @@
+{
+    "sticker_packs": [
+    {
+        "identifier": "notFound",
+        "stickers": [
+          {
+            "image_file": "02.webp",
+            "emojis": []
+          }
+        ]
+      },
+      {
+        "identifier": "moreFiles",
+        "stickers": [
+          {
+            "image_file": "01.webp",
+            "emojis": []
+          }
+        ]
+      }
+    ]
+  }
+  
