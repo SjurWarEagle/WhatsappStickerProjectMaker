@@ -1,10 +1,10 @@
 {
   "name": "checker",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tool to check the consistency of a Whatsapp Sticker project regarding sticker-images",
   "main": "index.js",
   "scripts": {
-    "run": "ts-node src/checker.ts"
+    "run": "npx ts-node src/checker.ts"
   },
   "author": "",
   "license": "ISC",
