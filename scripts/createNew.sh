@@ -1,6 +1,6 @@
 #!/bin/sh
 # Configuration
-PROJECTNAME="DerKokon"
+PROJECTNAME="Raupling"
 APPLICATIONID1="de"
 APPLICATIONID2="tkunkel"
 APPLICATIONID3="raupling"

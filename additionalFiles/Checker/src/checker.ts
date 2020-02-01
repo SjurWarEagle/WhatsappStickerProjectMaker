@@ -1,7 +1,9 @@
 import {existsSync, readdirSync} from "fs";
 import {IContentJson} from "./i-content-json";
 
-const assetsPath = 'C:\\IdeaProjects\\whatsappStickerProjectMaker\\additionalFiles\\Checker\\src\\exampleFiles';
+// const assetsPath = 'C:\\IdeaProjects\\whatsappstickerexperiment\\Android\\app\\src\\main\\assets';
+const assetsPath = '/project/Android/app/src/main/assets';
+
 const contentJson: IContentJson = require(`${assetsPath}/contents.json`);
 
 class Checker {
