@@ -7,10 +7,12 @@ RUN apt-get install -y --no-install-recommends imagemagick webp dos2unix
 RUN mkdir -p /scripts
 WORKDIR /scripts
 ADD Docker/convertSticker.sh /scripts/convertSticker.sh
+ADD Docker/convertStickerTelegram.sh /scripts/convertStickerTelegram.sh
 ADD Docker/convertAppLogo.sh /scripts/convertAppLogo.sh
 
 RUN mkdir -p /projectDir
 RUN chmod 777 /projectDir
 
 RUN dos2unix /scripts/convertSticker.sh
+RUN dos2unix /scripts/convertStickerTelegram.sh
 RUN dos2unix /scripts/convertAppLogo.sh

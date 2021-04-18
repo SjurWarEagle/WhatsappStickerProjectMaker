@@ -1,6 +1,6 @@
 # App Logo
 ANDROID_RES_BASEDIR=../../../Android/app/src/main/res
-cd /projectDir/imageConverter/originalImages/appLogo
+cd originalImages/appLogo
 
 convert -background none -resize 72x72 ic_launcher.png "${ANDROID_RES_BASEDIR}/mipmap-hdpi/ic_launcher.png"
 convert -background none -resize 72x72 ic_launcher_round.png "${ANDROID_RES_BASEDIR}/mipmap-hdpi/ic_launcher_round.png"
